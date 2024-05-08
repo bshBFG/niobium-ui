@@ -1,0 +1,14 @@
+:root {
+  --ui-background: theme(colors.white);
+  --ui-foreground: theme(colors.slate.700);
+  --ui-header-height: 4rem;
+}
+
+.dark {
+  --ui-background: theme(colors.slate.900);
+  --ui-foreground: theme(colors.slate.200);
+}
+
+body {
+  @apply font-sans text-[--ui-foreground] bg-[--ui-background];
+}

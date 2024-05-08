@@ -1,0 +1,16 @@
+{
+  "name": "niobium-ui-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.12.1",
+    "@nuxt/fonts": "^0.7.0",
+    "nuxt": "^3.11.2"
+  }
+}

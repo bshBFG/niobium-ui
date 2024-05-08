@@ -1,8 +1,8 @@
 {
   "name": "niobium-ui",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "version": "0.0.0",
+  "description": "Niobium UI",
+  "repository": "bshBFG/niobium-ui",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -19,9 +19,10 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev": "nuxi dev docs",
+    "dev:build": "nuxi build docs",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare docs",
+    "play": "nuxi dev playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
@@ -42,11 +43,15 @@
     "@nuxt/schema": "^3.11.2",
     "@nuxt/test-utils": "^3.12.0",
     "@types/node": "^20.12.7",
+    "@unocss/eslint-config": "^0.59.4",
     "changelogen": "^0.5.5",
     "eslint": "^9.0.0",
     "nuxt": "^3.11.2",
     "typescript": "latest",
     "vitest": "^1.4.0",
     "vue-tsc": "^2.0.14"
+  },
+  "resolutions": {
+    "niobium-ui": "workspace:*"
   }
 }

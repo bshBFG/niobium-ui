@@ -1,5 +1,6 @@
 // @ts-check
 import { createConfigForNuxt } from '@nuxt/eslint-config/flat'
+import unocss from '@unocss/eslint-config/flat'
 
 // Run `npx @eslint/config-inspector` to inspect the resolved config interactively
 export default createConfigForNuxt({
@@ -12,6 +13,7 @@ export default createConfigForNuxt({
   dirs: {
     src: [
       './playground',
+      './docs',
     ],
   },
 })
@@ -21,4 +23,6 @@ export default createConfigForNuxt({
         'vue/multi-word-component-names': 'off',
       },
     },
+    // @ts-ignore
+    unocss,
   )
